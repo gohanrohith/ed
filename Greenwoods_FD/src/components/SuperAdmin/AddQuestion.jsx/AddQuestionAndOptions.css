@@ -1,0 +1,172 @@
+/* AddQuestionAndOptions.css */
+
+/* General Styles */
+.add-question-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modern-card {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glass-bg {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+/* Form Inputs */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px; /* Increased spacing */
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  font-size: 16px; /* Larger font size */
+}
+
+.adaptive-textarea {
+  resize: vertical;
+  min-height: 100px; /* Increased height for textareas */
+}
+
+/* Question Counter */
+.question-counter {
+  font-size: 12px;
+  color: #666;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Option Grid */
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Wider options */
+  gap: 20px; /* Increased gap */
+  width: 100%;
+}
+
+.option-item {
+  width: 100%;
+}
+
+.option-tag {
+  font-weight: bold;
+  color: #1890ff;
+}
+
+/* File Name */
+.file-name {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Math Symbols Keyboard */
+.math-symbols-keyboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); /* Wider buttons */
+  gap: 10px; /* Increased gap */
+  margin-bottom: 20px;
+}
+
+.math-symbols-keyboard button {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+  text-align: center;
+  background-color: #f0f0f0;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.math-symbols-keyboard button:hover {
+  background-color: #e6f7ff;
+  border-color: #40a9ff;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.button-dashed {
+  width: 100%;
+  border: 1px dashed #1890ff;
+  color: #1890ff;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+}
+
+.button-primary {
+  width: 100%;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+}
+
+.button-primary:hover {
+  background-color: #40a9ff;
+}
+
+/* Modal */
+.modern-modal {
+  border-radius: 8px;
+}
+
+/* Remove Button */
+.ant-btn-danger {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+}
+
+.ant-btn-danger:hover {
+  background-color: #ff7875;
+}
+
+/* Wider Layout for Inputs */
+.question-container,
+.sub-question-container {
+  width: 100%;
+  padding: 20px; /* Increased padding */
+}
+
+/* Full-width Select Dropdowns */
+.modern-select {
+  width: 100%;
+}
+
+/* Full-width Upload Button */
+.ant-upload {
+  width: 100%;
+}
+
+.ant-upload button {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  font-size: 16px; /* Larger font size */
+}

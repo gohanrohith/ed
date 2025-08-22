@@ -1,0 +1,134 @@
+/* AddQuestion.css */
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #ff6b6b;
+  --bg-light: #2a73df;
+  --text-dark: #2d3748;
+  --text-light: #ffffff;
+  --border-radius: 12px;
+  --transition: all 0.3s ease-in-out;
+}
+
+body, html {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-light);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Full-Screen Layout */
+.full-screen-container {
+  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card Styling */
+.modern-card {
+  background: #d5f4d2;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 110%;
+  max-width: 1200px;
+  transition: var(--transition);
+}
+
+.modern-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Layout */
+.form-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.modern-select .ant-select-selector {
+  border-radius: var(--border-radius);
+  border: 1px solid #d1d5db;
+  padding: 10px 12px;
+  transition: var(--transition);
+}
+
+.modern-select:hover .ant-select-selector {
+  border-color: var(--primary-color);
+}
+
+/* Buttons */
+.action-button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--text-light);
+  font-weight: 600;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.action-button:hover {
+  background: darken(var(--primary-color), 10%);
+  transform: translateY(-2px);
+}
+
+/* Chapters and Question Input Section */
+.chapters-container {
+  margin-top: 20px;
+}
+
+/* Loading and Error Handling */
+.loading-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.error-container .ant-alert {
+  border-radius: var(--border-radius);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .modern-card {
+    padding: 16px;
+  }
+
+  .action-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chapters-container {
+    width: 100%;
+  }
+}
